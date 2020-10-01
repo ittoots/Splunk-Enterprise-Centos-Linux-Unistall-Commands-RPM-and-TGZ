@@ -1,0 +1,24 @@
+#REMOVE SPLUNK
+
+#UNINSTALL RPM
+
+#Stop Splunk from running
+/opt/splunk/bin/splunk stop
+
+#uninstall using rpm command
+Rpm –e splunk
+
+#clean up left over splunk files
+Rm –rf /opt/splunk/
+
+
+#UNINSTALL TGZ
+
+#Stop Splunk from running
+/opt/splunk/bin/splunk stop
+
+#Delete splunk files
+Rm –rf /opt/splunk
+
+#Delete splunk user
+Userdel splunk
